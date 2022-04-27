@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="350pt"
+        tools:context=".Home"
+        android:background="@color/sniff">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/home_logout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.anychart.anychart.AnyChartView
+                android:id="@+id/any_chart_view"
+                android:layout_width="303dp"
+                android:layout_height="383dp"
+                android:layout_marginTop="168dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/home"
+                app:layout_constraintStart_toEndOf="@+id/home_logout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
